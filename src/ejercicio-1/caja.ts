@@ -1,5 +1,16 @@
 import { Enser } from './enser';
 
+/**
+ * Clase que representa una caja que puede contener enseres.
+ * @param T Tipo de enser que puede contener la caja.
+ * @property _contenido Lista de enseres que contiene la caja.
+ * @method addEnser Añade un enser a la caja.
+ * @method removeEnser Elimina un enser de la caja.
+ * @method printContenido Imprime el contenido de la caja.
+ * @method searchEnser Busca un enser en la caja.
+ * @method contenido Devuelve el contenido de la caja.
+ * @method constructor Constructor de la clase.
+ */
 export class Caja<T extends Enser> {
   private _contenido: T[];
 

@@ -1,5 +1,21 @@
 export type Producto = [string, number];
 
+/**
+ * Clase que representa una factura.
+ * @param _nombreEmpresa Nombre de la empresa.
+ * @param _numeroFactura Número de la factura.
+ * @param _concepto Concepto de la factura.
+ * @param _productos Productos de la factura.
+ * @param _precioTotal Precio total de la factura.
+ * @param _fecha Fecha de la factura.
+ * @method print Imprime la factura.
+ * @returns Factura impresa.
+ * @example
+ * ```ts
+ * const factura = new Factura('Empresa', 1, 'Concepto', [['Producto', 10]], '01/01/2021');
+ * console.log(factura.print());
+ * ```
+ */
 export class Factura {
   private _nombreEmpresa: string;
   private _numeroFactura :number;
